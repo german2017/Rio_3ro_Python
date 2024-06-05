@@ -7,12 +7,10 @@ from customtkinter import *
 nombre: 
 apellido: 
 ---
-Ejercicio 4
+Ejercicio 5
 ---
 Enunciado:
-Al presionar el botón  'Saludar', se deberá obtener un nombre 
-utilizando el Dialog Prompt y luego mostrarlo en la caja de 
-texto entrada.
+Ingresar dos numeros por las cajas de texto, convertirlos a entero y mostrar por alert la suma de dichos numeros.
 '''
 
 def codigo():
