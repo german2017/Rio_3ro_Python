@@ -10,8 +10,8 @@ apellido:
 Ejercicio 5
 ---
 Enunciado:
-Ingresar dos numeros por las cajas de texto, convertirlos a entero y mostrar en el textbox resultado
-la suma de dichos numeros.
+Ingresar dos numeros por las cajas de texto, convertirlos a entero y mostrar por alert 
+la suma, resta, multiplicacion y division entre los números ingresados.
 '''
 
 def codigo():
@@ -23,7 +23,7 @@ def codigo():
 #Crea y configura la ventana
 set_appearance_mode("dark")
 root = CTk()
-root.geometry("400x375+50+300")
+root.geometry("400x275+50+300")
 root.resizable(False, False)
 root.title("Colegio Rio de la Plata")
 root.rowconfigure(0, weight=1)
@@ -44,12 +44,8 @@ txt_numero_2 = CTkEntry(master=frame, placeholder_text="Ingrese otro numero",fon
                                  height=28, border_color="#0b5394", border_width=2.5, text_color="#0b5394")
 txt_numero_2.pack(pady=21)
 
-txt_resultado = CTkEntry(master=frame, placeholder_text="Resultado",font=("Calibri", 16), width = 200, 
-                                 height=28, border_color="#0b5394", border_width=2.5, text_color="#0b5394")
-txt_resultado.pack(pady=22)
-
 #Crea un boton que ejecuta una funcion
-boton = CTkButton(master=frame, text="Sumar", command=codigo, font=("Arial", 18), width = 160, height=35,
+boton = CTkButton(master=frame, text="Operar", command=codigo, font=("Arial", 18), width = 160, height=35,
                                  corner_radius=7.5, fg_color="#0b5394", text_color="white")
 boton.pack(pady=23)
 
