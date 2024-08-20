@@ -12,7 +12,7 @@ Ejercicio 9
 Enunciado:
 Ingresar por los cuadros de texto el importe de una compra
 y el porcentaje de descuento que se aplicará. Mostrar por alert el importe 
-ingresado y el total con el descuento.
+ingresado, el descuento que se aplicará y el total con el descuento.
 '''
 
 def codigo():

@@ -10,16 +10,12 @@ apellido:
 Ejercicio 4
 ---
 Enunciado:
-Al presionar el botón  'Saludar', se deberá obtener un nombre 
-utilizando el Dialog Prompt y luego mostrarlo en la caja de 
-texto entrada.
+Al presionar el botón 'Calcular', se deberá obtener el importe de una compra utilizando el Dialog Prompt. Mostrar el 
+importe total con un descuento del 15%
 '''
 
 def codigo():
-    nombre = prompt("Dato", "Ingrese su nombre")
-    entrada.delete(0 , 100)
-    entrada.insert(0, nombre)
-
+    pass
 
 
 
@@ -39,12 +35,12 @@ frame = CTkFrame(master=root)
 frame.pack(expand=True, fill="both", pady=10, padx=70)
 
 #Crea una entrada de texto
-entrada = CTkEntry(master=frame, placeholder_text="Ingrese su nombre",font=("Calibri", 16), width = 200, 
+salida = CTkEntry(master=frame, placeholder_text="Total",font=("Calibri", 16), width = 200, 
                                  height=28, border_color="#0b5394", border_width=2.5, text_color="#0b5394")
-entrada.pack(pady=20)
+salida.pack(pady=20)
 
 #Crea un boton que ejecuta una funcion
-boton = CTkButton(master=frame, text="Saludar", command=codigo, font=("Arial", 18), width = 160, height=35,
+boton = CTkButton(master=frame, text="Calcular", command=codigo, font=("Arial", 18), width = 160, height=35,
                                  corner_radius=7.5, fg_color="#0b5394", text_color="white")
 boton.pack(pady=30)
 
